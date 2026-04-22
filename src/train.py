@@ -6,7 +6,7 @@ from model import PrunableNet
 from utils import sparsity_loss, compute_sparsity
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-LAMBDA = 0.001
+LAMBDA = 0.0001
 
 transform = transforms.ToTensor()
 
